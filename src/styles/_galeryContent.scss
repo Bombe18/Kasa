@@ -1,0 +1,41 @@
+.gallery_banner_background {
+  position: relative;
+  height: 223px;
+  border-radius: 25px;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+}
+
+.img__banner_background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+  z-index: 2; 
+  color: white;              
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+
