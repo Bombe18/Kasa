@@ -1,5 +1,6 @@
 import '../styles/_galeryContent.scss'
 import '../styles/_container1240.scss'
+import Logements from "../components/Logements"
 
 const Gallery = () => {
     const background = "src/assets/background.webp"
@@ -12,24 +13,10 @@ const Gallery = () => {
 
             <div className="gallery_background">
                 <div className="gallery_content">
-                    <div className="temp_item">
-                        <p className="temp_title">Temp title</p>
-                    </div>
-                    <div className="temp_item">
-                        <p className="temp_title">Temp title</p>
-                    </div>
-                    <div className="temp_item">
-                        <p className="temp_title">Temp title</p>
-                    </div>
-                    <div className="temp_item">
-                        <p className="temp_title">Temp title</p>
-                    </div>
-                    <div className="temp_item">
-                        <p className="temp_title">Temp title</p>
-                    </div>
-                    <div className="temp_item">
-                        <p className="temp_title">Temp title</p>
-                    </div>
+                     <Logements />
+                        
+                        
+                        
                 </div>
 
             </div>

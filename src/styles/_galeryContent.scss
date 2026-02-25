@@ -19,6 +19,11 @@
   object-fit: cover;
 }
 
+.gallery_background {
+  background-color: #F6F6F6;
+  border-radius: 20px;
+}
+
 .title {
   position: absolute;
   inset: 0;
@@ -28,14 +33,51 @@
   font-size: 48px;
   font-weight: 800;
   text-align: center;
-  z-index: 2; 
-  color: white;              
+  z-index: 2;
+  color: white;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
     -1px -1px 0 #000,
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.logement-title {
+  color: white;
+}
+
+.logements {
+  display: grid;
+grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 50px;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 50px;
+}
+
+.logement-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.logement-title {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  bottom: 80px;
+  left: 20px;
+  max-width: 320px;
+ text-shadow:
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
 }
 
 
+@media screen and (max-width: 940px) {
+
+}
