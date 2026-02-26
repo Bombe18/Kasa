@@ -13,10 +13,7 @@ const Gallery = () => {
 
             <div className="gallery_background">
                 <div className="gallery_content">
-                     <Logements />
-                        
-                        
-                        
+                     <Logements />   
                 </div>
 
             </div>
