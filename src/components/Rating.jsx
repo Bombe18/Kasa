@@ -1,3 +1,5 @@
+import "../styles/_rating.scss"
+
 const Rating = ({ scaleValue }) => {
     const range = [1, 2, 3, 4, 5]
 
