@@ -1,6 +1,6 @@
 import { getLogements } from "../../scripts/logementsDatas.js";
 import { useParams, Navigate } from "react-router-dom"
-import "../../styles/_cards.scss"
+import "./_cards.scss"
 import "../../styles/_container1240.scss"
 import Rating from "../../components/Rating.jsx"
 
