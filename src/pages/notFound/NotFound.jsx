@@ -1,9 +1,15 @@
 
-export default function HomePage() {
+import { Link } from 'react-router-dom'
+export default function NotFound() {
+
     return (
         <>
             <main>
-                <p>Page not found</p>
+                <p>404</p>
+
+                <p>Oups! La page que vous demandez n'existe pas.</p>
+
+                <Link to="/">Retourner sur la page d’accueil</Link>
             </main>
         </>
     )

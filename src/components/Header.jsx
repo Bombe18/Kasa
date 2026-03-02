@@ -1,5 +1,6 @@
 import '../styles/_header.scss'
 import '../styles/_container1240.scss'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
     const logo = "src/assets/LogoMain.png"
@@ -11,8 +12,8 @@ const Header = () => {
                     alt="Kasa logo"
                     className="nav-logo" />
                 <nav className="nav_container">
-                    <a href="/">Accueil</a>
-                    <a href="/about">À propos</a>
+                    <Link to="/">Accueil</Link>
+                    <Link to="/about">À propos</Link>
                 </nav>
             </div>
         </header>)
