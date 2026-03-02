@@ -1,19 +1,24 @@
-import Footer from "./components/footer"
-import Header from "./components/header"
-import Gallery from "./components/Gallery.jsx"
-import "./index.scss"
-<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'></link>
-
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import HomePage from './pages/homepage/HomePage.jsx';
+import About from './pages/about/About.jsx';
+import NotFound from './pages/notFound/NotFound.jsx';
+import Card from './pages/card/Card.jsx';
 
 const App = () => {
   return (
     <>
       <Header />
-      <Gallery />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/card/:id" element={<Card />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-
-export default App
+export default App;
