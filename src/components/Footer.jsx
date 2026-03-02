@@ -1,7 +1,7 @@
 import '../styles/_footer.scss'
+import logo from '../assets/LogoFooter.png'
 
 const Footer = () => {
-    const logo = "src/assets/LogoFooter.png"
     return (
         <footer className="footer">
             <div className="footer__container">
