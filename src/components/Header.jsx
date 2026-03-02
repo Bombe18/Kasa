@@ -1,9 +1,9 @@
 import '../styles/_header.scss'
 import '../styles/_container1240.scss'
 import { Link } from 'react-router-dom'
+import logo from '../assets/LogoMain.png'
 
 const Header = () => {
-    const logo = "src/assets/LogoMain.png"
     return (
         <header className="header container-1240">
             <div className="header__container">

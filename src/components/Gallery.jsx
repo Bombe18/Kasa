@@ -1,9 +1,9 @@
 import '../styles/_galeryContent.scss'
 import '../styles/_container1240.scss'
 import Logements from "../components/Logements"
+import background from '../assets/background.webp'
 
 const Gallery = () => {
-    const background = "src/assets/background.webp"
     return (
         <section className="container-1240">
             <div className="gallery_banner_background">
