@@ -3,11 +3,13 @@ import { useParams, Navigate } from "react-router-dom"
 import "./_cards.scss"
 import "../../styles/_container1240.scss"
 import Rating from "../../components/Rating.jsx"
+import Dropdown from "../../components/Dropdown.jsx";
+
 
 const Card = () => {
   const { id } = useParams()
 
- const logement = getLogements().find(l => l.id === id)
+  const logement = getLogements().find(l => l.id === id)
 
   if (!logement) {
     return <Navigate to="/notfound" />;
@@ -48,12 +50,16 @@ const Card = () => {
         </div>
 
         <div className="card__info">
-          <div className="card__description">{logement.description}</div>
+            <Dropdown
+              title="Description"
+              items={[logement.description]}
+            />
           <div className="card__equipement">
             <ul className="card__equipments_list">
-              {logement.equipments.map((equipment, index) => (
-                <li key={index}>{equipment}</li>
-              ))}
+              <Dropdown
+                title="Équipements"
+                items={logement.equipments}
+              />
             </ul>
           </div>
         </div>
