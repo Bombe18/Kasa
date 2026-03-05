@@ -4,7 +4,6 @@ import "../styles/_dropdown.scss"
 
 export default function Dropdown({ title, items = [] }) {
   const [isOpen, setIsOpen] = useState(false);
- 
 
   return (
     <div className={`dropdown ${isOpen ? "open" : ""}`} >
@@ -18,15 +17,12 @@ export default function Dropdown({ title, items = [] }) {
         </span>
       </button>
 
-      {isOpen && (
-<div className="dropdown__background">
-        <ul className="dropdown__content">
-          {items.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-        </div>
-      )}
+      <div className={`dropdown__background ${isOpen ? "open" : ""}`} />
+      <ul className={`dropdown__content ${isOpen ? "open" : ""}`}>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 }
