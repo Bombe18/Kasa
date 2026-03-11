@@ -44,4 +44,26 @@
   max-width: 320px;
 }
 
-@media screen and (max-width: 940px) {}
+.gallery_background {
+  background-color: #F6F6F6;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 940px) {
+
+.gallery_background {
+    background-color: transparent;}
+
+  .logements {
+    grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+    margin-top: 0;
+    gap: 22px;
+padding: 22px
+  }
+.img_wrapper { height: 255px;}
+
+.logement-title {
+  max-width: 320px;
+}
+
+}
