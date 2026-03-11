@@ -26,3 +26,33 @@
     text-decoration: underline;
     font-weight: 500;
 }
+
+.mobile-break {
+    display: none;
+}
+
+@media  (max-width: 940px) {
+    .not-found__title {
+        font-size: 96px;
+        margin-top: 100px;
+    }
+
+    .not-found__message {
+        font-size: 18px;
+        text-align: center;
+        margin-top: -30px;
+    }
+
+    .not-found__link {
+        font-size: 14px;
+        margin-top: -40px;
+    }
+
+    .mobile-break {
+    display: block;
+}
+
+.footer {
+    margin-top: 130px;
+}
+}

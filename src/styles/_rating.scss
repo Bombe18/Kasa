@@ -6,4 +6,16 @@
     color: #FF6060;
 }
 
-@media screen and (max-width: 940px) {}
+.rating {
+display: flex; 
+align-self: center;
+gap: 15px;
+margin-top: 20px;
+}
+
+@media screen and (max-width: 940px) {
+
+.rating__star {scale: 0.6;
+}
+.rating {gap: 3px;}
+}

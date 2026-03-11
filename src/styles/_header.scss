@@ -1,6 +1,7 @@
 .header__container {
     display: flex;
     justify-content: space-between;
+    margin-top: -10px;
 }
 
 .nav_container {
@@ -10,7 +11,36 @@
     gap: 57px;
 }
 
+nav a,
+nav {
+    font-size: 24px ;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    padding: 4px 8px;
+}
+
+nav .active {
+    text-decoration: underline;
+}
 
 @media screen and (max-width: 940px) {
 
+.header__container{
+    margin-top: -30px;
+}
+
+    .nav_container {
+        gap: 26px;
+    }
+
+    nav a {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .nav-logo {
+        width: 145px;
+        height: auto;
+    }
 }

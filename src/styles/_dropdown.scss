@@ -24,7 +24,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 255, 0.15);
+  background-color: #F6F6F673;
   border-radius: 10px;
   transform-origin: top;
   transform: scaleY(0);
@@ -84,4 +84,13 @@
   margin: 4px 0;
 }
 
-@media screen and (max-width: 940px) {}
+@media screen and (max-width: 940px) {
+
+ .dropdown__button {
+  font-size: 13px;
+ }
+
+ .loader {
+  scale: 0.7;
+ }
+}

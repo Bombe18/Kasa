@@ -11,8 +11,8 @@
 .footer__container {
     display: flex;
     flex-direction: column;
-    gap: 50px;  
-    align-items: center; 
+    gap: 20px;
+    align-items: center;
     position: relative;
     bottom: -15px;
 }
@@ -23,5 +23,16 @@
 }
 
 @media screen and (max-width: 940px) {
+    .footer {
+        margin-top: 0;
+    }
 
+    .footer__copyright {
+        font-size: 12px;
+        max-width: 100px;
+    }
+
+    .footer__container {
+        gap: 5px;
+    }
 }
