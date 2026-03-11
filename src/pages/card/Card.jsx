@@ -29,31 +29,41 @@ const Card = () => {
         <div className="appartment__info">
           <div className="appartment__location">
             <h2 className="card__title">{logement.title}</h2>
+            <div className="location-and-tags">
             <h3 className="card__location">{logement.location}</h3>
+            <div className="card__tags-list">{scaleTag(logement.tags)}
+            </div>
+            </div>
           </div>
 
           <div className="card__host">
-            <div className="card__host_name">{logement.host.name}</div>
-            <img
-              className="host__picture"
-              src={logement.host.picture}
-              alt={"photo de " + logement.host.name}
-            />
+            <div className="host__name-and-picture">
+              <div className="card__host_name">{logement.host.name}</div>
+              <img
+                className="host__picture"
+                src={logement.host.picture}
+                alt={"photo de " + logement.host.name}
+              />
+            </div>
+
+            <div className="card__rating">
+              <Rating scaleValue={logement.rating} />
+            </div>
           </div>
+
+
+
         </div>
 
         <div className="card__Tags_And_Rating">
-          <div className="card__tags-list">{scaleTag(logement.tags)}</div>
-          <div className="card__rating">
-            <Rating scaleValue={logement.rating} />
-          </div>
+
         </div>
 
         <div className="card__info">
-            <Dropdown
-              title="Description"
-              items={[logement.description]}
-            />
+          <Dropdown
+            title="Description"
+            items={[logement.description]}
+          />
           <div className="card__equipement">
             <ul className="card__equipments_list">
               <Dropdown
