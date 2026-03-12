@@ -3,13 +3,6 @@
   flex-direction: column;
 }
 
-.card__image {
-  width: 100%;
-  height: 415px;
-  object-fit: cover;
-  border-radius: 25px;
-}
-
 .card__title {
   font-size: 36px;
   font-weight: 500;
@@ -42,7 +35,7 @@
 .card__host {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
   justify-content: center;
 }
 
@@ -82,8 +75,6 @@
   gap: 76px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-self: flex-start;
-
 }
 
 .card__equipments_list {
