@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 function Logements() {
     return (
-        <div className="logements">
+        <div className="cards_gallery">
             {getLogements().map((logement) => (
                 <div key={logement.id} className="logement img_wrapper">
                     <Link to={`/card/${logement.id}`}>
-                      <img className="logement-img" src={logement.cover} alt={logement.title} />
-                      <h2 className="logement-title">{logement.title}</h2>
+                      <img className="cards-img" src={logement.cover} alt={logement.title} />
+                      <h2 className="cards-title">{logement.title}</h2>
                     </Link>
                 </div>
             ))}
