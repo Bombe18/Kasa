@@ -4,7 +4,7 @@ import "./_cards.scss"
 import "../../styles/_container1240.scss"
 import Rating from "../../components/Rating.jsx"
 import Dropdown from "../../components/Dropdown.jsx";
-
+import CardSlider from "../../components/CardSlider.jsx";
 
 const Card = () => {
   const { id } = useParams()
@@ -24,7 +24,7 @@ const Card = () => {
   return (
     <section className="cards container-1240">
       <div className="card">
-        <img className="card__image" src={logement.cover} alt={logement.title} />
+        <CardSlider pictures={logement.pictures} title={logement.title} />
 
         <div className="appartment__info">
           <div className="appartment__location">
