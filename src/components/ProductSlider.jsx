@@ -1,8 +1,8 @@
 import { useState } from "react";
 import arrow from "../assets/CarouselArrow.png";
-import "../styles/_cardSlider.scss";
+import "../styles/_productSlider.scss";
 
-function CardSlider({ pictures = [], title = "" }) {
+function productSlider({ pictures = [], title = "" }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   if (pictures.length === 0) return null;
@@ -20,13 +20,13 @@ function CardSlider({ pictures = [], title = "" }) {
   };
 
   return (
-    <div className="card-slider">
+    <div className="product-slider">
       {pictures.length > 1 && (
         <>
-          <div className="card-arrow-left" onClick={prevSlide}>
+          <div className="product-arrow-left" onClick={prevSlide}>
             <img src={arrow} alt="Flèche gauche" />
           </div>
-          <div className="card-arrow-right" onClick={nextSlide}>
+          <div className="product-arrow-right" onClick={nextSlide}>
             <img src={arrow} alt="Flèche droite" />
           </div>
         </>
@@ -35,10 +35,10 @@ function CardSlider({ pictures = [], title = "" }) {
       <img
         src={pictures[currentIndex]}
         alt={title}
-        className="card-slider__image"
+        className="product-slider__image"
       />
           {pictures.length > 1 && (
-        <div className="card-slider__counter">
+        <div className="product-slider__counter">
           {currentIndex + 1}/{pictures.length}
         </div>
       )}
@@ -47,4 +47,4 @@ function CardSlider({ pictures = [], title = "" }) {
   );
 }
 
-export default CardSlider;
+export default productSlider;

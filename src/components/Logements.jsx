@@ -6,7 +6,7 @@ function Logements() {
         <div className="cards_gallery">
             {getLogements().map((logement) => (
                 <div key={logement.id} className="logement img_wrapper">
-                    <Link to={`/card/${logement.id}`}>
+                    <Link to={`/product/${logement.id}`}>
                       <img className="cards-img" src={logement.cover} alt={logement.title} />
                       <h2 className="cards-title">{logement.title}</h2>
                     </Link>

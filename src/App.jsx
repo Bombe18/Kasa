@@ -4,7 +4,6 @@ import Footer from './components/Footer.jsx';
 import HomePage from './pages/homepage/HomePage.jsx';
 import About from './pages/about/About.jsx';
 import NotFound from './pages/notFound/NotFound.jsx';
-import Card from './pages/card/Card.jsx';
 
 const App = () => {
   return (
@@ -13,7 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
-        <Route path="/card/:id" element={<Card />} />
+        <Route path="/product/:id" element={<Product />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
