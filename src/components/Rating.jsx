@@ -10,12 +10,12 @@ const inactivedStar = inactiveStar
         <div className="rating">
             {range.map((index) =>
                 scaleValue >= index ? (
-                    <span key={index} className="rating__star rating__star_active">
-                        <img src={activedStar} alt="Étoile active" />
+                    <span key={index} >
+                        <img className="rating__star rating__star_active" src={activedStar} alt="Étoile active" />
                     </span>
                 ) : (
-                    <span key={index} className="rating__star">
-                        <img src={inactivedStar} alt="Étoile inactive" />
+                    <span key={index}>
+                        <img className="rating__star" src={inactivedStar} alt="Étoile inactive" />
                     </span>
                 )
             )}

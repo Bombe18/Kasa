@@ -23,11 +23,11 @@ function productSlider({ pictures = [], title = "" }) {
     <div className="product-slider">
       {pictures.length > 1 && (
         <>
-          <div className="product-arrow-left" onClick={prevSlide}>
-            <img src={arrow} alt="Flèche gauche" />
+          <div onClick={prevSlide}>
+            <img className="product-arrow-left" src={arrow} alt="Flèche gauche" />
           </div>
-          <div className="product-arrow-right" onClick={nextSlide}>
-            <img src={arrow} alt="Flèche droite" />
+          <div onClick={nextSlide}>
+            <img className="product-arrow-right" src={arrow} alt="Flèche droite" />
           </div>
         </>
       )}
