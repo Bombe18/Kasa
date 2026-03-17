@@ -7,15 +7,22 @@
 }
 
 .rating {
-display: flex; 
-align-items: center;
-gap: 5px;
-margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width: 940px) {
 
-.rating__star {scale: 0.6;
-}
-.rating {gap: 3px;}
+    .rating__star {
+width: 20px;
+height: 20px;
+
+    }
+
+    .rating {
+    margin-top: 0; 
+    gap: 2px;   
+    }
 }

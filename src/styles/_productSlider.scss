@@ -44,4 +44,16 @@
     .product-slider {
         height: 255px;
     }
+
+    .product-arrow-left,
+    .product-arrow-right {
+        height: 20px;
+        width: 12px;
+        top: 0px;
+        padding: 120px 5px 120px 5px;
+    }
+
+    .product-slider__counter {
+        display: none;
+    }
 }
