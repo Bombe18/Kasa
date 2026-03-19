@@ -1,14 +1,15 @@
 import { useState } from "react";
 import vector from "../assets/Vector.png"
 import "../styles/_dropdown.scss"
+import { getCustomClass } from "./../scripts/utils.js"
 
-export default function Dropdown({ title, items = [] }) {
+export default function Dropdown({ title, items = [], variant }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className={`dropdown ${isOpen ? "open" : ""}`} >
       <button
-        className="dropdown__button"
+        className={`dropdown__button ${getCustomClass(variant)}`}
         onClick={() => setIsOpen(!isOpen)}
       >
         {title}
