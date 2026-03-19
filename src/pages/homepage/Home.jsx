@@ -6,13 +6,11 @@ import background from '../../assets/background.webp'
 import { Link } from 'react-router-dom';
 
 export default function HomePage() {
-    const backgroundImage = background;
-
     return (
         <>
             <main>
                 <section className="container-1240">
-                    <Banner image={backgroundImage} alt="Paysage de côte avec des falaises et des vagues" title={
+                    <Banner image={background} alt="Paysage de côte avec des falaises et des vagues" title={
                         <>
                             Chez vous, <br className="mobile-break" />
                             partout et ailleurs
