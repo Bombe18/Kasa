@@ -3,13 +3,13 @@
   height: 223px;
   border-radius: 25px;
   overflow: hidden;
-  box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   &::after {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.60);
     z-index: 1;
   }
 }
@@ -43,8 +43,10 @@
   display: none;
 }
 
-.about--background  { //gallery_banner_background additionnal class for about. 
-  box-shadow:none;
+.about--background {
+  //gallery_banner_background additionnal class for about. 
+  box-shadow: none;
+
   &::after {
     content: "";
     background-color: rgba(0, 0, 0, 0.3);
@@ -64,10 +66,17 @@
   }
 
   .gallery_banner_background {
+    box-shadow: none;
+  }
+
+  .gallery_banner_background {
     height: 111px;
     border-radius: 10px;
   }
-
+  
+.img__banner_background {
+  scale: 1.9;
+}
   .mobile-break {
     display: block;
   }

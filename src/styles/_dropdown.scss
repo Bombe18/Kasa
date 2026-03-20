@@ -99,9 +99,15 @@ border-radius: 10px;
 
  .dropdown__button {
   font-size: 13px;
+  padding: 7px 0px 7px 10px;
+  border-radius: 5px;
  }
 
  .loader {
-  scale: 0.7;
+  width: 16px;
  }
+.dropdown__content.open {
+  font-size: 12px;
+  margin-top: 0;
+}
 }
