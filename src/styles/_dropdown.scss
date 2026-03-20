@@ -10,11 +10,9 @@
 
 .dropdown {
   display: flex;
-  width: 100%;
   flex-direction: column;
   gap: 10px;
   position: relative;
-  height: 100%;
   z-index: 10;
 }
 
@@ -106,8 +104,11 @@ border-radius: 10px;
  .loader {
   width: 16px;
  }
-.dropdown__content.open {
+.dropdown__content, .dropdown__content.open {
   font-size: 12px;
   margin-top: 0;
+}
+.dropdown.open {
+  margin-bottom: 20px;
 }
 }
