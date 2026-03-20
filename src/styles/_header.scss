@@ -20,6 +20,10 @@ nav {
     padding: 4px 8px;
 }
 
+nav a:hover {
+    text-decoration: underline black;
+}
+
 nav .active {
     text-decoration: underline;
 }
