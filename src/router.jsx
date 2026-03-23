@@ -27,7 +27,7 @@ const AppRoutes = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: async() => {
+        loader: async () => {
           return await getLogements();
         },
         element: <Home />,
@@ -51,12 +51,6 @@ const AppRoutes = createBrowserRouter([
 
 export default AppRoutes;
 
-
-
-//<Route path="/" element={<HomePage />} />
-//<Route path="/about" element={<About />} />
-//<Route path="/product/:id" element={<Product />} />
-//<Route path="*" element={<NotFound />} />
 
 
 
