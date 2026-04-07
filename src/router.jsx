@@ -1,14 +1,13 @@
+import { createBrowserRouter, Outlet } from "react-router-dom";
 import Home from "./pages/homepage/Home.jsx";
-import Footer from "./components/Footer.jsx";
-import Header from "./components/Header.jsx";
 import About from "./pages/about/About.jsx";
 import Product from "./pages/product/Product.jsx";
 import NotFound from "./pages/notFound/NotFound.jsx";
-import "./index.scss";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 import { getLogements } from "./scripts/logementsDatas.js";
-import { createBrowserRouter, Outlet } from "react-router-dom";
-
-
+import { productLoader } from "./loader/productLoader.jsx";
+import "./index.scss";
 
 function RootLayout() {
   return (
@@ -27,15 +26,14 @@ const AppRoutes = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: async () => {
-          return await getLogements();
-        },
+        loader: getLogements,
         element: <Home />,
       },
       {
         path: "product/:id",
-
+        loader: productLoader,
         element: <Product />,
+        errorElement: <NotFound />,
       },
       {
         path: "about",
@@ -44,15 +42,9 @@ const AppRoutes = createBrowserRouter([
       {
         path: "*",
         element: <NotFound />,
-      }],
-  }]);
-
-
+      },
+    ],
+  },
+]);
 
 export default AppRoutes;
-
-
-
-
-
-

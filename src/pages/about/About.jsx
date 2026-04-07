@@ -12,7 +12,7 @@ export default function HomePage() {
             <main className="container-1240">
                 <Banner image={background}
                 variant="about-background" 
-                alt="Paysage de côte avec des falaises et des vagues" title="" />
+                alt="Paysage de montagnes avec un lac gelé en son centre" title="" />
                 <div className="container-1024">
                     <Dropdown title="Fiabilité"
                      variant="about-dropdown"
